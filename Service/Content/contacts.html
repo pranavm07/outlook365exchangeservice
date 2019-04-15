@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Kimray</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<script>
+var isappended=false;
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        alert('end of page');
+		if(!isappended)
+		{
+		appendhtml();
+		}
+    }
+};
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    alert(e.target);   
+}, true);
+
+function appendhtml()
+{
+var divs = document.getElementsByTagName("div");
+var lastChild = divs[divs.length-3];
+lastChild.insertAdjacentHTML( 'beforeend', '<p> this is new element </p>' );
+isappended =true;
+<!-- e.innerHTML = '<p> this is new element </p>'; -->
+
+<!-- while(e.firstChild) { -->
+    <!-- e.appendChild(e.firstChild); -->
+	<!-- break; -->
+<!-- }
+<!-- var e = document.createElement('div'); -->
+<!-- e.innerHTML = '<p> this is new element </p>'; -->
+
+<!-- while(e.firstChild) { -->
+    <!-- e.appendChild(e.firstChild); -->
+	<!-- break; -->
+<!-- } -->
+};
+</script>
+</head>
+<body>
+<header>
+ 
+  <div class="container-fluid">
+    <h1>Contacts</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="searchContainer"> <i class="fa fa-search searchIcon"></i>
+      <input class="searchBox" type="search" name="search" placeholder="Search...">
+    </div>
+  </div>
+</header>
+
+<!--contact list--->
+<div class="container-fluid mt-minus-75">
+  <div class="curvebg">
+    
+
+  <div class=" contact-img">
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="announcement.html" target="_blank">
+          <img src="img/1.jpg" alt="Lights" class="img-fluid">
+          <div class="caption">
+			  <h2>Glenn Munson</h2>
+            <p>Human Recruiter Officer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/2.jpg" alt="Nature" class="img-fluid">
+          <div class="caption">
+            <h2>Robin Frazier</h2>
+            <p>Finance</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/3.jpg" alt="Fjords" class="img-fluid">
+          <div class="caption">
+           <h2>Samule Woods</h2>
+            <p>Software Engineer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class=" contact-img">
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/1.jpg" alt="Lights" class="img-fluid">
+          <div class="caption">
+			  <h2>Glenn Munson</h2>
+            <p>Human Recruiter Officer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/2.jpg" alt="Nature" class="img-fluid">
+          <div class="caption">
+            <h2>Robin Frazier</h2>
+            <p>Finance</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/3.jpg" alt="Fjords" class="img-fluid">
+          <div class="caption">
+           <h2>Samule Woods</h2>
+            <p>Software Engineer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+	  
+  <div class=" contact-img">
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/1.jpg" alt="Lights" class="img-fluid">
+          <div class="caption">
+			  <h2>Glenn Munson</h2>
+            <p>Human Recruiter Officer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/2.jpg" alt="Nature" class="img-fluid">
+          <div class="caption">
+            <h2>Robin Frazier</h2>
+            <p>Finance</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="img-gallery">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="img/3.jpg" alt="Fjords" class="img-fluid">
+          <div class="caption">
+           <h2>Samule Woods</h2>
+            <p>Software Engineer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+</body>
+</html>
